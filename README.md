@@ -3,8 +3,8 @@
 A pixel-accurate, responsive React application built from the provided Figma specification as part of the AI Full Stack Developer Technical Assessment.
 
 ## Live Demo & Repository
-- **Live Deployment:** [Insert your Vercel URL here]
-- **GitHub Repository:** [Insert your GitHub URL here]
+- **Live Deployment:** https://hydra-curls.vercel.app/
+- **GitHub Repository:**  https://github.com/akashtolanur/hydra-curls.git
 
 ---
 
@@ -42,5 +42,5 @@ A pixel-accurate, responsive React application built from the provided Figma spe
 
 ### 1. Clone the repository
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/akashtolanur/hydra-curls.git
 cd hydra-curls
