@@ -1,75 +1,46 @@
-# React + TypeScript + Vite
+# Parachute Advansed Hydra Curls – Responsive Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pixel-accurate, responsive React application built from the provided Figma specification as part of the AI Full Stack Developer Technical Assessment.
 
-Currently, two official plugins are available:
+## Live Demo & Repository
+- **Live Deployment:** [Insert your Vercel URL here]
+- **GitHub Repository:** [Insert your GitHub URL here]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tech Stack
+- **Framework:** React 19 + TypeScript (via Vite)
+- **Styling:** Tailwind CSS v4
+- **Icons:** Lucide React
+- **Hosting:** Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features & Implementation Highlights
+- **Figma Accuracy:** Recreated the complete Parachute Advansed Hydra Curls landing page layout, including custom radial gradients, wave dividers, and stylized brand typography.
+- **Component Modularity:** Architected into isolated, reusable section components:
+  - `Navbar`: Sticky blurred navigation with desktop links and mobile drawer toggle.
+  - `HeroSection`: Centered radial glow, custom brand badge, headline slogan, and wave divider.
+  - `LaunchBanner`: Product highlights with badge tags and action buttons.
+  - `ProductShowcase`: Deep purple range spotlight highlighting formula claims.
+  - `FeatureCards`: Split dual feature cards.
+  - `ProductCarousel`: Interactive thumbnail and arrow slider for the product line.
+  - `ClinicalProof`: 48-hour hydration metric highlight and benefit points.
+  - `IngredientsSection`: 3-column ingredient cards with formula guarantee checks.
+  - `CommunityAndReviews`: Testimonial spotlight and Arab hair type classification cards (Wavy, Curly, Coily).
+  - `JourneySection`: Three alternating expert guide blocks with stats bar.
+  - `Footer`: Responsive 4-column footer with an interactive newsletter input.
+- **Fully Responsive:** Optimized for Mobile (< 640px), Tablet (768px - 1024px), and Desktop (1024px+).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Local Setup & Development
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
+- Node.js (v18.0.0 or higher recommended)
+- npm, yarn, or pnpm
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+### 1. Clone the repository
+```bash
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd hydra-curls
